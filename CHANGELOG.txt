@@ -1,0 +1,44 @@
+--- browserOS Version 0.1.x.x ---
+v0.1:
+- THE first release of browserOS.
+
+v0.1.5:
+- Includes a crash handling system to prevent sudden crashes.
+
+v0.1.5.2:
+- Fixes a few bugs with the crash handler.
+
+v0.1.7:
+- Adds 5 new commands: rename, credits -py, copyright [-py], and warrenty.
+- Removes the redundant "list -tree" command from help.
+
+v0.1.7.5:
+- Adds more troubleshooting parameters to the "crash.txt" file.
+
+v0.1.9:
+- Adds 6 new mathmatical commands: add, sub, div, mult, pos, and neg.
+- Commands "del -unload" and "reload" are available. 
+
+v0.1.9.5:
+- Cleans up unessesary boot-time loading, such as the external function loader.
+- Fixes a few typos.
+- Removes faulty "store -tree" command.
+- Becomes final version of Version 0.1 and only prioitized version.
+
+--- browserOS Version 0.2.x ---
+0.2-snapshot-1:
+- First preview release of version 0.2.
+
+0.2-snapshot-2:
+- Adds a notice for older users on the old commands.
+
+0.2-snapshot-3:
+- Adds the commands "shutdown" and upcoming "exit" to the help page.
+
+0.2-snapshot-4:
+- Adds the new command "define."
+- Command "shutdown" will be omitted.
+- Command "list" now has a different way of listing files.
+
+0.2-snapshot-5:
+- soon
