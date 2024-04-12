@@ -23,7 +23,14 @@ v0.1.9.5:
 - Cleans up unessesary boot-time loading, such as the external function loader.
 - Fixes a few typos.
 - Removes faulty "store -tree" command.
-- Becomes final version of Version 0.1 and only prioitized version.
+- Becomes the final version of Version 0.1 and the only prioritized version.
+
+v0.1.9.5-r2:
+- Fixes minor unknown bugs.
+
+v0.1.9.5-r3:
+- Fixes a major bug when taking an input for writing a file.
+- The "About" info lists v0.1.9.5 as an LTS release.
 
 --- browserOS Version 0.2.x ---
 0.2-snapshot-1:
@@ -36,9 +43,24 @@ v0.1.9.5:
 - Adds the commands "shutdown" and upcoming "exit" to the help page.
 
 0.2-snapshot-4:
-- Adds the new command "define."
+- Adds the new (future) command "define."
 - Command "shutdown" will be omitted.
 - Command "list" now has a different way of listing files.
+- "Stupid restart" is now an easter egg for EOFError.
+- The info command now prints the storage amounts and CPU cores in a fstring, which omits the str() function.
+- Line 453: "shutdown" is now a command that will trigger the reminder, "I think you mean 'exit'".
+- cat() and readf() now display the size of a file.
+- BrowserOS is now released under the Apache License.
+- The "start" command now displays the old version warning.
+- Fixed bug where even entering 'No' in the overwrite dialog, it would still write.
+- In the info() function, make a different way of displaying size.
+- Adds another new command "verify."
+- Added "copyright" to the boot-up splash info.
+- Added more new commands: "date" and "time".
+- ^ Which adds more short functions: timef() and timedf().
+- ^ And also a help describer when using "help".
+- Removed unnecessary indents for REPL interpreter.
+- A new command was added to replace the load command: register and register -file.
 
 0.2-snapshot-5:
 - soon
