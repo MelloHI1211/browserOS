@@ -23,14 +23,20 @@ v0.1.9.5:
 - Cleans up unessesary boot-time loading, such as the external function loader.
 - Fixes a few typos.
 - Removes faulty "store -tree" command.
-- Becomes the final version of Version 0.1 and the only prioritized version.
+- Becomes final version of Version 0.1 and only prioitized version.
 
 v0.1.9.5-r2:
 - Fixes minor unknown bugs.
 
 v0.1.9.5-r3:
 - Fixes a major bug when taking an input for writing a file.
-- The "About" info lists v0.1.9.5 as an LTS release.
+- "About" info lists v0.1.9.5 as a LTS release.
+- Removes unessesary condition on Line 475.
+- Shortended the repetitive try/except clauses in the beginning.
+- Added the information blurb about v0.2 commands in the help page.
+- Removed the X-ed out commands that seems to never be available.
+- Changed the license and warrenty paragraphs to be more in line with the new license.
+- Shortened the else clause in readFiles().
 
 --- browserOS Version 0.2.x ---
 0.2-snapshot-1:
@@ -47,8 +53,8 @@ v0.1.9.5-r3:
 - Command "shutdown" will be omitted.
 - Command "list" now has a different way of listing files.
 - "Stupid restart" is now an easter egg for EOFError.
-- The info command now prints the storage amounts and CPU cores in a fstring, which omits the str() function.
-- Line 453: "shutdown" is now a command that will trigger the reminder, "I think you mean 'exit'".
+- The info command now prints the storage amounts and CPU cores in an fstring, which omits the str() function.
+- Line 453: "shutdown" is now a command that will trigger the reminder "I think you mean 'exit'".
 - cat() and readf() now display the size of a file.
 - BrowserOS is now released under the Apache License.
 - The "start" command now displays the old version warning.
@@ -59,8 +65,30 @@ v0.1.9.5-r3:
 - Added more new commands: "date" and "time".
 - ^ Which adds more short functions: timef() and timedf().
 - ^ And also a help describer when using "help".
-- Removed unnecessary indents for REPL interpreter.
+- Removed unnessesary indents for REPL interpreter.
 - A new command was added to replace the load command: register and register -file.
 
 0.2-snapshot-5:
-- soon
+- The registerf() command now works properly.
+- readxf() and readyf() prints contents of the X and Y registers.
+- swapreg() is now a new function for the register class.
+^ clearreg() is also a new function.
+- This version also adds new commands for each function.
+- writex() and writey() are new functions for the register class.
+^ There are also commands for writing the registers' data.
+- Removed the unessesary crash.txt generator when it catches an EOFError or KeyboardInterrupt.
+- Removed the other clause for the "info" command.
+- Added a new function to get raw files from GitHub.
+^ Along with a new command.
+- If the directory is not specified, it will now ask you to put a directory.
+- User can now delete plank.py, but not browseros_v0.2-snapshot-5.py.
+- Every function now returns a 1 or 0 condition.
+- REPL loop now uses a match case statement.
+- Changed grammar errors in renamef() and clonef().
+- browserOS now doesn't use shutil.
+- Organized the library imports to two lines.
+^ Which gets rid of the "requests" library to make browserOS more portable.
+- listf() now uses listdir() instead of walk().
+- Crash writer now uses proper placeholders for formatting.
+- Removed the IP address indicator.
+- 
